@@ -15,7 +15,7 @@ class UserSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'Admin',
             'email' => 'admin@laonlabs.com',
-            'password' => '1234567890'
+            'password' => bcrypt('1234567890')
         ]);
     }
 }
