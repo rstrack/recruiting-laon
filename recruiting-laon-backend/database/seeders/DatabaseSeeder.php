@@ -13,12 +13,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
-        User::factory()->create([
-            'name' => 'Admin',
-            'email' => 'admin@laonlabs.com',
-            'password' => '1234567890'
+        $this->call([
+            UserSeeder::class,
+            GenreSeeder::class,
+            MovieSeeder::class,
+            MovieGenreSeeder::class,
         ]);
     }
 }
