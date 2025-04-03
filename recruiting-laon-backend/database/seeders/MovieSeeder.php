@@ -24,7 +24,8 @@ class MovieSeeder extends Seeder
                     'cast' => 'Daisy Ridley, Clive Owen, Taz Skylar e outros.',
                     'director' => 'Martin Campbell',
                     'imdb_rating' => 5,
-                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/mwzDApMZAGeYCEVjhegKvCzDX0W.jpg'
+                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/mwzDApMZAGeYCEVjhegKvCzDX0W.jpg',
+                    'trailer_url' => 'https://www.youtube.com/embed/4KIOLMv2ItI?si=g9do7rQsNYRk_R7V'
                 ],
                 [
                     'id' => 2,
@@ -32,11 +33,12 @@ class MovieSeeder extends Seeder
                     'title' => 'Cosmic Chaos',
                     'year' => 2023,
                     'duration' => 87,
-                    'overview' => '',
+                    'overview' => null,
                     'cast' => 'Ken Godmere, Caroline Dhavernas, Darren L. Hopwood e outros.',
                     'director' => 'Federico Haller',
                     'imdb_rating' => 4.5,
-                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/mClzWv7gBqgXfjZXp49Enyoex1v.jpg'
+                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/mClzWv7gBqgXfjZXp49Enyoex1v.jpg',
+                    'trailer_url' => null,
                 ],
                 [
                     'id' => 3,
@@ -48,7 +50,8 @@ class MovieSeeder extends Seeder
                     'cast' => 'Zoé Marchal, Franck Gastambide, Bosh e outros.',
                     'director' => 'Kamel Guemra',
                     'imdb_rating' => 4.7,
-                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/9AzMgk6HVqwqTmAbzAuD8fVmnOd.jpg'
+                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/9AzMgk6HVqwqTmAbzAuD8fVmnOd.jpg',
+                    'trailer_url' => 'https://www.youtube.com/embed/slSwwaZ0KoM?si=l4zkI35vY_4HSDVW'
                 ],
                 [
                     'id' => 4,
@@ -60,7 +63,8 @@ class MovieSeeder extends Seeder
                     'cast' => 'Anthony Mackie, Harrison Ford, Danny Ramirez e outros.',
                     'director' => 'Julius Onah',
                     'imdb_rating' => 5.9,
-                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/viUricKwbToOJIRrKOUr0Bg9rOY.jpg'
+                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/viUricKwbToOJIRrKOUr0Bg9rOY.jpg',
+                    'trailer_url' => 'https://www.youtube.com/embed/1pHDWnXmK7Y?si=UjkvuFD3fy6dVIq_'
                 ],
                 [
                     'id' => 5,
@@ -72,7 +76,8 @@ class MovieSeeder extends Seeder
                     'cast' =>  'Michael Grant, Noah Gray-Cabey e outros.',
                     'director' => 'Paul Anderson',
                     'imdb_rating' => 5.3,
-                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/oXeiQAfRK90pxxhP5iKPXQqAIN1.jpg'
+                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/oXeiQAfRK90pxxhP5iKPXQqAIN1.jpg',
+                    'trailer_url' => null,
                 ],
                 [
                     'id' => 6,
@@ -84,7 +89,8 @@ class MovieSeeder extends Seeder
                     'cast' => 'Gustav Dyekjær Giese, Reda Kateb, Amanda Collin e outros.',
                     'director' => 'Frederik Louis Hviid',
                     'imdb_rating' => 6.3,
-                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/63tvLp9pYygvAaqWpikjTq9FHy7.jpg'
+                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/63tvLp9pYygvAaqWpikjTq9FHy7.jpg',
+                    'trailer_url' => 'https://www.youtube.com/embed/cmkmWsC6iTs?si=EQ3lV-ur64CzH3Cw'
                 ],
                 [
                     'id' => 7,
@@ -96,7 +102,8 @@ class MovieSeeder extends Seeder
                     'cast' => 'Jason Statham, Jason Flemyng, Merab Ninidze e outros.',
                     'director' => 'David Ayer',
                     'imdb_rating' => 6.9,
-                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/iT6yYCAuMQwm1PV4nByrsrsIOhG.jpg'
+                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/iT6yYCAuMQwm1PV4nByrsrsIOhG.jpg',
+                    'trailer_url' => 'https://www.youtube.com/embed/zTbgNC42Ops?si=0PgYSaR0yL4pNBST'
                 ],
                 [
                     'id' => 8,
@@ -108,7 +115,8 @@ class MovieSeeder extends Seeder
                     'cast' => 'Jason Robert Stephens, Sarah Nicklin, Angela Relucio e outros.',
                     'director' => 'Robert Michael Ryan',
                     'imdb_rating' => 3.7,
-                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/nVwu3mN7hr1yF467pGct3yQFM41.jpg'
+                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/nVwu3mN7hr1yF467pGct3yQFM41.jpg',
+                    'trailer_url' => 'https://www.youtube.com/embed/HLYK1Am9k8M?si=4YjBDinVyfHWnDVw'
                 ],
                 [
                     'id' => 9,
@@ -120,7 +128,8 @@ class MovieSeeder extends Seeder
                     'cast' => 'Rachel Zegler, Emilia Faucher, Gal Gadot e outros.',
                     'director' => 'Marc Webb',
                     'imdb_rating' => 1.5,
-                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/t0mabA2l3KE9Ai350BEKz61Ltor.jpg'
+                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/t0mabA2l3KE9Ai350BEKz61Ltor.jpg',
+                    'trailer_url' => 'https://www.youtube.com/embed/iV46TJKL8cU?si=7vLcsifDpOVVRvqS'
                 ],
                 [
                     'id' => 10,
@@ -132,7 +141,8 @@ class MovieSeeder extends Seeder
                     'cast' => 'Aaron Pierre, Kelvin Harrison Jr., Tiffany Boone e outros.',
                     'director' => 'Barry Jenkins',
                     'imdb_rating' => 7.453,
-                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/iMVuv6Gz5fj7vZ51IjRF3AiW87y.jpg'
+                    'poster_url' => 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/iMVuv6Gz5fj7vZ51IjRF3AiW87y.jpg',
+                    'trailer_url' => 'https://www.youtube.com/embed/o17MF9vnabg?si=5FqgpvXHGuyYyNeT'
                 ],
             ]
         );

@@ -20,12 +20,13 @@ return new class extends Migration
             $table->string(column: 'title');
             $table->integer(column: 'year');
             $table->integer(column: 'duration')->comment('in minutes');
-            $table->text(column: 'overview');
+            $table->text(column: 'overview')->nullable();
             $table->string(column: 'cast');
             $table->string(column: 'awards')->nullable();
             $table->string(column: 'director');
             $table->float(column: 'imdb_rating');
             $table->string(column: 'poster_url');
+            $table->string(column: 'trailer_url')->nullable();
         });
     }
 
