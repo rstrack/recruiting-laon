@@ -40,4 +40,9 @@ class AuthService {
         $token = $user->createToken('accessToken');
         return response()->json(['token' => $token->plainTextToken], 200);
     }
+
+    public function logout(){
+        Auth::user()->currentAccessToken()->delete();
+        return response()->json(['message' => 'User logged out successfully'], 200);
+    }
 }

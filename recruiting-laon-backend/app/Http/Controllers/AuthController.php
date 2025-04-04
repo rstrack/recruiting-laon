@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
  
 use App\Services\AuthService;
 use Illuminate\Http\Request;
-use Illuminate\Http\JsonResponse;
 
 class AuthController extends Controller
 {
@@ -18,5 +17,10 @@ class AuthController extends Controller
     public function signUp(Request $request)
     {
         return $this->service->signUp($request->only('name', 'email', 'password'));
+    }
+
+    public function logout(Request $request)
+    {
+        return $this->service->logout();
     }
 }
