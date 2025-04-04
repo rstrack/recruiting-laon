@@ -17,6 +17,8 @@ class Movie extends Model
         'awards',
         'director',
         'imdb_rating',
+        'poster_url',
+        'trailer_url',
     ];
     public function genres(): HasMany
     {
