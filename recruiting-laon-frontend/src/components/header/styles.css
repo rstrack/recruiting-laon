@@ -1,0 +1,7 @@
+.back-button {
+    cursor: pointer;
+
+    &:hover {
+        color: var(--text-hover);
+    }
+}
