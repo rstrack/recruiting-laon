@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Movie extends Model
 {
@@ -20,8 +20,8 @@ class Movie extends Model
         'poster_url',
         'trailer_url',
     ];
-    public function genres(): HasMany
+    public function genres(): BelongsToMany
     {
-        return $this->hasMany(Genre::class);
+        return $this->belongsToMany(Genre::class, 'movie_genre', 'movie_id', 'genre_id');
     }
 }

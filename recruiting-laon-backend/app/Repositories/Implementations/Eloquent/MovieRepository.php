@@ -9,7 +9,7 @@ class MovieRepository implements MovieRepositoryInterface
 {
     public function findByID($id)
     {
-        $movie = Movie::findOrFail($id);
+        $movie = Movie::with('genres')->findOrFail($id);
         return $movie;
     }
 
