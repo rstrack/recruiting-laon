@@ -9,4 +9,6 @@ class Genre extends Model
     protected $fillable = [
         'description',
     ];
+    
+    protected $hidden = ['pivot'];
 }
