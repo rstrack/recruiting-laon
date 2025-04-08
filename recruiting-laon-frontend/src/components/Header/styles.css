@@ -1,7 +1,13 @@
-.back-button {
+.hover-button {
     cursor: pointer;
 
     &:hover {
         color: var(--text-hover);
     }
+}
+
+a, span{
+    text-decoration: none !important;
+    font-weight:600;
+    font-size: 16px;
 }

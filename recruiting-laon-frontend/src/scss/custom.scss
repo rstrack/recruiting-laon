@@ -1,0 +1,29 @@
+@import "../node_modules/bootstrap/scss/functions";
+
+// Figma names, not correct
+
+$gray-100: #1F1D2F;
+$gray-200: #282639;
+$gray-300: #48465B;
+$gray-400: #636177;
+$gray-500: #B5B3CB;
+
+$primary:               #FFF !default;
+$secondary:             $gray-200 !default;
+$light:                 #FFF !default;
+
+$tertiary:              $gray-500 !default;
+$body-bg:               $gray-100 !default;
+$body-color:            #FFF !default;
+$border-color:          $gray-300 !default;
+$dropdown-header-color: $gray-500;
+$body-tertiary-bg:      $gray-300;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "light": $light,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
