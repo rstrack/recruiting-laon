@@ -9,8 +9,16 @@ import { faCircleLeft } from "@fortawesome/free-regular-svg-icons";
 
 import "./styles.css"
 import { useAuth } from "@/contexts/AuthContext";
+import { useEffect } from "react";
 
 export const Header = () => {
+
+    
+    useEffect(() => {
+        // necessary to use boostrap third-party functions (popovers, dropdowns)
+        import('bootstrap/dist/js/bootstrap.bundle.min.js' as string);
+    })
+
     const { user, logout } = useAuth()
     const pathname = usePathname();
 
