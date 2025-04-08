@@ -1,0 +1,38 @@
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    color: white;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.search-input {
+    border: 1px solid var(--bs-gray-400);
+    color: #FFF;
+    outline: none;
+    border-radius: 25px;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    padding-left: 0px;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    caret-color: white;
+}
+
+.search-input:focus {
+    width: 300px;
+    padding-left: 32px;
+}
+
+.search-input:not(:focus)::placeholder {
+    color: transparent;
+}

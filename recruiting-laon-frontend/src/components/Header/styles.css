@@ -11,3 +11,16 @@ a, span{
     font-weight:600;
     font-size: 16px;
 }
+
+header{
+    padding: 1rem;
+}
+
+@media (min-width: 576px) {
+    header{
+        padding-left: 120px !important;
+        padding-right: 120px !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+}
