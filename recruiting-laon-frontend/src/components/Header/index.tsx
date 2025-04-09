@@ -33,7 +33,7 @@ export const Header = () => {
     }
 
     return (
-        <header className="row border-bottom align-items-center text-center text-sm-start">
+        <header className={"row border-bottom align-items-center text-center text-sm-start " + (!['/login', '/register'].includes(pathname) ? "bg-secondary" : "")}>
 
             <div className="col-12 col-sm-4 mb-3 mb-sm-0 justify-content-center justify-content-sm-start">
                 {pathname === '/' ? (
