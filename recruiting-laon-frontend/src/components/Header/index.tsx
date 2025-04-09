@@ -33,17 +33,23 @@ export const Header = () => {
     }
 
     return (
-        <header className="row mb-4 border-bottom align-items-center text-center text-sm-start">
+        <header className="row border-bottom align-items-center text-center text-sm-start">
 
-            <div className="col-12 col-sm-4 mb-3 mb-sm-0">
-                <div className="hover-button d-inline-flex align-items-center" onClick={() => history.back()}>
-                    <FontAwesomeIcon icon={faCircleLeft} size="xl" />
-                    <span className="mx-2">VOLTAR</span>
-                </div>
+            <div className="col-12 col-sm-4 mb-3 mb-sm-0 justify-content-center justify-content-sm-start">
+                {pathname === '/' ? (
+                    <Image src="/logo.svg" alt="logo" width="132" height="40" />
+                ) : (
+                    <div className="hover-button d-inline-flex align-items-center" onClick={() => history.back()}>
+                        <FontAwesomeIcon icon={faCircleLeft} size="xl" />
+                        <span className="mx-2">VOLTAR</span>
+                    </div>
+                )}
             </div>
 
             <div className="col-12 col-sm-4 d-flex justify-content-center mb-3 mb-sm-0">
-                <Image src="/logo.svg" alt="logo" width="132" height="40" />
+                {pathname !== '/' && (
+                    <Image src="/logo.svg" alt="logo" width="132" height="40" />
+                )}
             </div>
 
             <div className="col-12 col-sm-4 d-flex justify-content-center justify-content-sm-end align-items-center flex-wrap gap-2">

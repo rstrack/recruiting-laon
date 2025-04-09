@@ -1,3 +1,8 @@
 div:has(input:-webkit-autofill) > label{
     color: #000 !important;
 }
+
+.form-container{
+    flex: 1;
+    height: 100%;
+}
