@@ -28,6 +28,16 @@
     }
 }
 
+.group-password:has(input:-webkit-autofill){
+    .btn-show-password{
+        background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important;
+        color: black;
+        &:hover{
+            color: gray;
+        }
+    }
+}
+
 .group-password > div > input{
     transition: none !important;
     &:focus{
