@@ -37,8 +37,8 @@ const Login = () => {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const validationErrors = validate();
+        setErrors(validationErrors);
         if (Object.keys(validationErrors).length > 0) {
-            setErrors(validationErrors);
             return;
         }
 
