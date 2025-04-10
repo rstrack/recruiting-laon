@@ -21,7 +21,7 @@ class AuthService {
             return response()->json(['token' => $token->plainTextToken], 200);
         }
  
-        return response()->json(['message' => 'Invalid email/password'], 422);
+        return response()->json(['message' => __('auth.invalid_email_password')], 422);
     }
 
     public function signUp($data){
