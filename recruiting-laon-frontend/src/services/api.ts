@@ -2,6 +2,7 @@
 
 import axios from "axios";
 import { getCookie } from "cookies-next";
+import { toast } from "react-toastify";
 
 const api = axios.create({
     baseURL: `${process.env.NEXT_PUBLIC_API_URL}`,
@@ -25,6 +26,11 @@ api.interceptors.response.use(
         return res;
     },
     (error) => {
+        if(error.status > 499){
+            toast.error("Ocorreu um erro no servidor. Entre em contato com o suporte")
+        }else{
+            toast.error(error.response.data.message)
+        }
         return Promise.reject(error.response.data);
     }
 )

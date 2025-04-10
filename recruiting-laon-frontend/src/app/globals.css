@@ -21,6 +21,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     display: flex;
     flex-direction: column;
+    padding-top: 105px;
 }
 
 * {
@@ -64,4 +65,13 @@ header{
         padding-left: 120px;
         padding-right: 120px;
     }
+}
+
+.main-container{
+    background: linear-gradient(180deg, var(--bs-secondary) 35%, var(--bs-body-bg) 35%);
+    background-attachment: fixed;
+}
+
+a, span{
+    letter-spacing: .1rem;
 }

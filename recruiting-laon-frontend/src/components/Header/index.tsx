@@ -33,7 +33,7 @@ export const Header = () => {
     }
 
     return (
-        <header className={"row border-bottom align-items-center text-center text-sm-start " + (!['/login', '/register'].includes(pathname) ? "bg-secondary" : "")}>
+        <header className={"row border-bottom align-items-center text-center text-sm-start fixed-top " + (!['/login', '/register'].includes(pathname) ? "bg-secondary" : "")}>
 
             <div className="col-12 col-sm-4 mb-3 mb-sm-0 justify-content-center justify-content-sm-start">
                 {pathname === '/' ? (
@@ -75,10 +75,10 @@ export const Header = () => {
                         </button>
                         <ul className="dropdown-menu dropdown-menu-end bg-secondary">
                             <li>
-                                <span className="dropdown-header">
+                                <p className="dropdown-header">
                                     {user.name}<br/>
                                     {user.email}
-                                </span>
+                                </p>
                             </li>
                             <div className="dropdown-divider"></div>
                             <li>

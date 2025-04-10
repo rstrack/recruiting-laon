@@ -10,6 +10,7 @@ import "../css/custom.css"
 import { Inter } from 'next/font/google'
 import { AuthProvider } from '@/contexts/AuthContext';
 import { Metadata } from 'next';
+import { ToastContainer } from 'react-toastify';
 
 config.autoAddCss = false;
 
@@ -31,9 +32,8 @@ export default function RootLayout({
             <AuthProvider>
                 <body>
                     <Header />
-                    <div className='main-container'>
-                        {children}
-                    </div>
+                    {children}
+                    <ToastContainer theme="colored"/>
                 </body>
             </AuthProvider>
         </html>
