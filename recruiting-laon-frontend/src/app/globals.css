@@ -71,10 +71,10 @@ header{
 }
 
 body:has(.main-container){
-    background: linear-gradient(180deg, var(--bs-secondary) 35%, var(--bs-body-bg) 35%);
+    background: linear-gradient(180deg, var(--bs-secondary) 45%, var(--bs-body-bg) 45%);
     background-attachment: fixed;
 }
 
-a, span{
+.text-spacing-10{
     letter-spacing: .1rem;
 }

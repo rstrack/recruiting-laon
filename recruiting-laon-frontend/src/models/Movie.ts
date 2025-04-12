@@ -5,7 +5,7 @@ export type Movie = {
     original_title: string
     title: string
     year: string
-    duration: string
+    duration: number
     overview: string
     cast: string
     awards: string

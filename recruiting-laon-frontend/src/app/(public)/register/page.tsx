@@ -103,7 +103,7 @@ const Register = () => {
             </div>
             {errors.password && <div className="invalid-feedback d-block">{errors.password}</div>}
             <div className="col-12 form-floating">
-                <button type="submit" className="w-100 btn btn-lg btn-light">
+                <button type="submit" className="w-100 btn btn-lg btn-light rounded-1">
                     {isLoading
                         ? (
                             <div className="spinner-grow spinner-grow-sm" role="status">

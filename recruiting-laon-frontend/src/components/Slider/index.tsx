@@ -30,7 +30,7 @@ const Slider = ({ title, items, imgWidth }: SliderProps) => {
     return (
         <>
             <div className="col-12 mb-3 d-flex justify-content-between align-items-center">
-                <span className="text-tertiary">{title}</span>
+                <span className="text-tertiary text-spacing-10">{title}</span>
                 <div className="d-flex flex-row gap-2">
                     <button
                         type="button"

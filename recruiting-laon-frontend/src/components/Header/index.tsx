@@ -18,7 +18,7 @@ export const Header = () => {
 
     useEffect(() => {
         // necessary to use boostrap third-party functions (popovers, dropdowns)
-        import('bootstrap/dist/js/bootstrap.bundle.min.js' as string);
+        import('bootstrap');
     })
 
     const { user, logout } = useAuth()
@@ -41,7 +41,7 @@ export const Header = () => {
                 ) : (
                     <div className="hover-button d-inline-flex align-items-center" onClick={() => history.back()}>
                         <FontAwesomeIcon icon={faCircleLeft} size="xl" />
-                        <span className="mx-2">VOLTAR</span>
+                        <span className="mx-2 text-spacing-10">VOLTAR</span>
                     </div>
                 )}
             </div>
@@ -54,10 +54,10 @@ export const Header = () => {
 
             <div className="col-12 col-sm-4 d-flex justify-content-center justify-content-sm-end align-items-center flex-wrap gap-2">
                 {pathname == '/login' && (
-                    <Link href="/register" className="hover-button">CADASTRAR</Link>
+                    <Link href="/register" className="hover-button text-spacing-10">CADASTRAR</Link>
                 )}
                 {pathname == '/register' && (
-                    <Link href="/login" className="hover-button">ENTRAR</Link>
+                    <Link href="/login" className="hover-button text-spacing-10">ENTRAR</Link>
                 )}
                 {pathname == '/' && (
                     <ExpandingSearchBar onChange={handleSearch} className=""/>
