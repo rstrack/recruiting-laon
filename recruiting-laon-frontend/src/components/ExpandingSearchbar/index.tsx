@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./styles.css"
 
 type ExpandingSearchBarProps = {
-    onChange: () => null
+    onChange: () => Promise<void>
     className: string
 }
 
