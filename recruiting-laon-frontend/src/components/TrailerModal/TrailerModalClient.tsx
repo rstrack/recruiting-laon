@@ -14,7 +14,7 @@ interface TrailerModalProps {
 export default function TrailerModalClient({ url, show, onClose }: TrailerModalProps) {
     const [iframeSrc, setIframeSrc] = useState('');
     const modalRef = useRef<HTMLDivElement>(null);
-    const bsModalRef = useRef<any>(null);
+    const bsModalRef = useRef<bootstrap.Modal | null>(null);
 
     useEffect(() => {
         import('bootstrap').then(({ Modal }) => {
