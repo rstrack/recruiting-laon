@@ -26,6 +26,10 @@ api.interceptors.response.use(
         return res;
     },
     (error) => {
+        if(!error.response?.data){
+            toast.error(error.message)
+            return Promise.reject(error);
+        }
         if(error.status > 499){
             toast.error("Ocorreu um erro no servidor. Entre em contato com o suporte")
         }else{
