@@ -39,7 +39,7 @@ const Movies = () => {
         ) : (
             <>
                 <div className="row gx-5">
-                    <div className="col-12 col-sm-6 col-lg-4 d-grid gap-3">
+                    <div className="col-12 col-sm-6 col-lg-3 d-grid gap-3">
                         <Image 
                             src={movie.poster_url}
                             width={300}
@@ -56,7 +56,7 @@ const Movies = () => {
                         </button>
                     </div>
 
-                    <div className="col-12 col-sm-6 col-lg-8 ">
+                    <div className="col-12 col-sm-6 col-lg-9">
                         <div className="row">
                             <h1>{movie.title}</h1>
                             <p className="text-tertiary mb-1"><b>Título original:</b> {movie.original_title}</p>
