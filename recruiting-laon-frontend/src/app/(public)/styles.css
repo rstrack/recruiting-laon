@@ -71,6 +71,5 @@
     &:active{
         background-color: var(--bs-body-bg) !important;
         transition: none !important;
-        border: none !important;
     }
 }

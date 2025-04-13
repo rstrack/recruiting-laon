@@ -45,7 +45,9 @@ export const Header = () => {
 
             <div className="col-12 col-sm-4 mb-3 mb-sm-0 justify-content-center justify-content-sm-start">
                 {pathname === '/' ? (
-                    <Image src="/logo.svg" alt="logo" width="132" height="40" />
+                    <Link href="/">
+                        <Image src="/logo.svg" alt="logo" width="132" height="40" />
+                    </Link>
                 ) : (
                     <div className="hover-button d-inline-flex align-items-center" onClick={() => history.back()}>
                         <FontAwesomeIcon icon={faCircleLeft} size="xl" />
@@ -55,12 +57,14 @@ export const Header = () => {
             </div>
 
             {pathname !== '/' && (
-            <div className="col-12 col-sm-4 d-flex justify-content-center mb-3 mb-sm-0">
-                    <Image src="/logo.svg" alt="logo" width="132" height="40" />
-            </div>
+                <div className="col-12 col-sm-4 d-flex justify-content-center mb-3 mb-sm-0">
+                    <Link href={['/login', '/register'].includes(pathname) ? "" : "/"}>
+                        <Image src="/logo.svg" alt="logo" width="132" height="40" />
+                    </Link>
+                </div>
             )}
 
-            <div className={"col-12 d-flex justify-content-center justify-content-sm-end align-items-center flex-wrap gap-2 "+(pathname !== '/' ? "col-sm-4" : "col-sm-8")}>
+            <div className={"col-12 d-flex justify-content-center justify-content-sm-end align-items-center flex-wrap gap-2 " + (pathname !== '/' ? "col-sm-4" : "col-sm-8")}>
                 {pathname == '/login' && (
                     <Link href="/register" className="hover-button text-spacing-10">CADASTRAR</Link>
                 )}
