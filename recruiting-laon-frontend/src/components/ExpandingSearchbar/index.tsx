@@ -1,10 +1,12 @@
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
+import { ChangeEvent } from "react"
+
 import "./styles.css"
 
 type ExpandingSearchBarProps = {
-    onChange: () => Promise<void>
+    onChange: (e: ChangeEvent<HTMLInputElement>) => void
     className: string
 }
 

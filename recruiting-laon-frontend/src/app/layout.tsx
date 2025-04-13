@@ -11,6 +11,7 @@ import { Inter } from 'next/font/google'
 import { AuthProvider } from '@/contexts/AuthContext';
 import { Metadata } from 'next';
 import { ToastContainer } from 'react-toastify';
+import { SearchProvider } from '@/contexts/SearchContext';
 
 config.autoAddCss = false;
 
@@ -30,11 +31,13 @@ export default function RootLayout({
     return (
         <html lang="pt-BR" className={inter.className}>
             <AuthProvider>
-                <body>
-                    <Header />
-                    {children}
-                    <ToastContainer theme="colored"/>
-                </body>
+                <SearchProvider>
+                    <body>
+                        <Header />
+                        {children}
+                        <ToastContainer theme="colored"/>
+                    </body>
+                </SearchProvider>
             </AuthProvider>
         </html>
     );

@@ -33,6 +33,10 @@
     padding-left: 32px;
 }
 
-.search-input:not(:focus)::placeholder {
+.search-input:not(:focus) {
     color: transparent;
+
+    &::placeholder{
+        color: transparent; 
+    }
 }
