@@ -102,6 +102,10 @@ const Register = () => {
                 </button>
             </div>
             {errors.password && <div className="invalid-feedback d-block">{errors.password}</div>}
+
+            <small className="text-tertiary">Ao clicar em <b>cadastrar</b>, você está aceitando os Termos 
+            e Condições e a Política de Privacidade da Laon.</small>
+
             <div className="col-12 form-floating">
                 <button type="submit" className="w-100 btn btn-lg btn-light rounded-1">
                     {isLoading
