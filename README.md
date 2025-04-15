@@ -14,7 +14,6 @@
 - Abra o terminal na pasta raíz do projeto e copie os comandos abaixo:
 
 ```
-    composer global require laravel/installer
     cd recruiting-laon-backend
     composer install
     ./vendor/bin/sail up -d
